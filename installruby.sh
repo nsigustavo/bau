@@ -1,7 +1,7 @@
 sudo apt-get -y install zlib1g zlib1g-dev
-sudo apt-get -y install ruby, irb, rails, rubygems
-sudo gem cucumber
+sudo apt-get -y install build-essential libssl-dev libreadline5-dev
 
+sudo apt-get -y install ruby, irb, rails, rubygems
 cd
 wget http://www.blue.sky.or.jp/atelier/ruby/ruby-zlib-0.6.0.tar.gz
 tar xvzf ruby-zlib-0.6.0.tar.gz
@@ -13,9 +13,13 @@ cd
 rm ruby-zlib-0.6.0.tar.gz
 rm -rf ruby-zlib-0.6.0
 
-gem install rails
-gem install cucumber
 
+
+sudo gem install cucumber
+sudo gem install rails
+
+
+cd
 
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >>  ~/.bashrc
 
